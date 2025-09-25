@@ -10,13 +10,16 @@ echo "  1. spatial_category_subsets.zip (includes full dataset + 12 categories)"
 echo "  2. overlay_images.zip"
 echo ""
 
+# Install gdown if not available
+pip install -q gdown
+
 # Download spatial_category_subsets.zip
 echo "⬇️  Downloading spatial_category_subsets.zip..."
-wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1kVjG00YHcB3RQ88WX4TCGNQ5SPwy6lUw' -O spatial_category_subsets.zip
+gdown 'https://drive.google.com/file/d/1kVjG00YHcB3RQ88WX4TCGNQ5SPwy6lUw/view?usp=sharing' -O spatial_category_subsets.zip
 
 # Download overlay_images.zip  
 echo "⬇️  Downloading overlay_images.zip..."
-wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1JeqbQ8b6-k-czLGZBejR560TPz_FOSei' -O overlay_images.zip
+gdown 'https://drive.google.com/file/d/1JeqbQ8b6-k-czLGZBejR560TPz_FOSei/view?usp=sharing' -O overlay_images.zip
 
 # Extract files
 echo "📦 Extracting files..."
