@@ -6,7 +6,7 @@ import re
 from collections import defaultdict
 
 import numpy as np
-from tqdm import tqdm
+from tqdm.autonotebook import tqdm
 from dotenv import load_dotenv
 load_dotenv()  # take environment variables from .env.
 

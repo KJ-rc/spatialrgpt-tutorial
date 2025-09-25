@@ -17,16 +17,13 @@ Date: September 2025
 """
 
 import json
-import math
 import os
 import sys
-import time
 from collections import defaultdict
-from pathlib import Path
-from typing import Dict, List, Optional, Union, Any
+from typing import Dict, List, Optional
 
 import numpy as np
-from tqdm import tqdm
+from tqdm.autonotebook import tqdm
 
 # Import aisuite (installed as package)
 import aisuite as ai

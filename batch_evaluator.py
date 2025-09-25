@@ -6,8 +6,7 @@ import os
 import sys
 from pathlib import Path
 
-import numpy as np
-from tqdm import tqdm
+from tqdm.autonotebook import tqdm
 from PIL import Image
 from dotenv import load_dotenv
 load_dotenv()  # take environment variables from .env.
@@ -92,7 +91,7 @@ def eval_model(args):
     results = []
     
     for i, line in enumerate(tqdm(questions, desc="Processing questions")):
-        print(f"Processing question {i+1}/{len(questions)}: {line['id']}")
+        # print(f"Processing question {i+1}/{len(questions)}: {line['id']}")
         
         # Extract metadata
         question_id = line["id"]
