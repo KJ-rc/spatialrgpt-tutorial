@@ -1,0 +1,15 @@
+# API keys and environment
+.vscode
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints
+
+# Datasets and outputs
+datasets/*
+!datasets/download_datasets.sh
+eval_output/
