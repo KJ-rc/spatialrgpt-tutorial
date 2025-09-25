@@ -15,16 +15,16 @@ pip install -q gdown
 
 # Download spatial_category_subsets.zip
 echo "⬇️  Downloading spatial_category_subsets.zip..."
-gdown 'https://drive.google.com/file/d/1kVjG00YHcB3RQ88WX4TCGNQ5SPwy6lUw/view?usp=sharing' -O spatial_category_subsets.zip
+gdown --fuzzy 'https://drive.google.com/file/d/1kVjG00YHcB3RQ88WX4TCGNQ5SPwy6lUw/view?usp=sharing' -O spatial_category_subsets.zip
 
 # Download overlay_images.zip  
 echo "⬇️  Downloading overlay_images.zip..."
-gdown 'https://drive.google.com/file/d/1JeqbQ8b6-k-czLGZBejR560TPz_FOSei/view?usp=sharing' -O overlay_images.zip
+gdown --fuzzy 'https://drive.google.com/file/d/1JeqbQ8b6-k-czLGZBejR560TPz_FOSei/view?usp=sharing' -O overlay_images.zip
 
 # Extract files
 echo "📦 Extracting files..."
-unzip -q spatial_category_subsets.zip
-unzip -q overlay_images.zip
+unzip -o -q spatial_category_subsets.zip
+unzip -o -q overlay_images.zip
 
 echo "✅ Datasets downloaded and extracted!"
 echo "📁 Final structure:"
