@@ -11,6 +11,7 @@ A beginner-friendly quickstart tutorial for [SpatialRGPT](https://github.com/Anj
 ```bash
 pip install -r requirements.txt
 cd datasets && bash download_datasets.sh && cd ..
+pip install "git+https://github.com/KJ-rc/aisuite.git"
 jupyter notebook spatial_reasoning_tutorial.ipynb
 ```
 
